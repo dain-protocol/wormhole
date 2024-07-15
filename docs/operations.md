@@ -557,7 +557,7 @@ Configuration files, environment variables and flags are all supported.
 ethRPC: "ws://eth-devnet:8545"
 ethContract: "0xC89Ce4735882C9F0f0FE26686c53074E09B0D550"
 solanaRPC: "http://solana-devnet:8899"
-solanaContract: "Bridge1p5gheXUvJ6jGWGeCsgPKgnE3YgdGKRVCMY9o"
+solanaContract: "7Chejn9MGdMNy9R9EwUcKSLShEMkTjFNrkJrcJxbSbZF"
 ```
 
 <!-- cspell:enable -->

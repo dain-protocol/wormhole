@@ -1078,7 +1078,7 @@ var adminCommandTest = []adminCommandTestEntry{
 				}`,
 	},
 
-	// build/bin/guardiand template governance-solana-call --chain-id solana --call-data 00010304 --governance-contract B6RHG3mfcckmrYN1UhmJzyS1XX3fZKbkeUcpJe9Sy3FE
+	// build/bin/guardiand template governance-solana-call --chain-id solana --call-data 00010304 --governance-contract 7pfuCiiRkssGefRV52zTh7RvFTjvfokEV44k28ktmzdH
 	{
 		label:   "SolanaCall success",
 		errText: "",
@@ -1089,7 +1089,7 @@ var adminCommandTest = []adminCommandTestEntry{
 					nonce: 2920957782
 					solana_call: {
 						chain_id: 1
-						governance_contract: "B6RHG3mfcckmrYN1UhmJzyS1XX3fZKbkeUcpJe9Sy3FE"
+						governance_contract: "7pfuCiiRkssGefRV52zTh7RvFTjvfokEV44k28ktmzdH"
 						encoded_instruction: "00010304"
 					}
 				}`,
@@ -1134,7 +1134,7 @@ var adminCommandTest = []adminCommandTestEntry{
 					nonce: 2920957782
 					solana_call: {
 						chain_id: 1
-						governance_contract: "B6RHG3mfcckmrYN1UhmJzyS1XX3fZKbkeUcpJe9Sy3FE"
+						governance_contract: "7pfuCiiRkssGefRV52zTh7RvFTjvfokEV44k28ktmzdH"
 						encoded_instruction: "Hello, World!"
 					}
 				}`,

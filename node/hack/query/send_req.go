@@ -128,11 +128,11 @@ func main() {
 		logger.Info("Running Solana account test")
 
 		// Start of query creation...
-		account1, err := solana.PublicKeyFromBase58("Bridge1p5gheXUvJ6jGWGeCsgPKgnE3YgdGKRVCMY9o")
+		account1, err := solana.PublicKeyFromBase58("7Chejn9MGdMNy9R9EwUcKSLShEMkTjFNrkJrcJxbSbZF")
 		if err != nil {
 			panic("solana account1 is invalid")
 		}
-		account2, err := solana.PublicKeyFromBase58("B6RHG3mfcckmrYN1UhmJzyS1XX3fZKbkeUcpJe9Sy3FE")
+		account2, err := solana.PublicKeyFromBase58("7pfuCiiRkssGefRV52zTh7RvFTjvfokEV44k28ktmzdH")
 		if err != nil {
 			panic("solana account2 is invalid")
 		}

@@ -162,7 +162,7 @@ To Solana:
 
 <!-- cspell:disable -->
 
-    kubectl exec solana-devnet-0 -c setup -- client post-message Bridge1p5gheXUvJ6jGWGeCsgPKgnE3YgdGKRVCMY9o 1 confirmed ffff
+    kubectl exec solana-devnet-0 -c setup -- client post-message 7Chejn9MGdMNy9R9EwUcKSLShEMkTjFNrkJrcJxbSbZF 1 confirmed ffff
 
 <!-- cspell:enable -->
 
@@ -170,7 +170,7 @@ To Solana as CPI instruction:
 
 <!-- cspell:disable -->
 
-    kubectl exec solana-devnet-0 -c setup -- client post-message --proxy CP1co2QMMoDPbsmV7PGcUTLFwyhgCgTXt25gLQ5LewE1 Bridge1p5gheXUvJ6jGWGeCsgPKgnE3YgdGKRVCMY9o 1 confirmed ffff
+    kubectl exec solana-devnet-0 -c setup -- client post-message --proxy CP1co2QMMoDPbsmV7PGcUTLFwyhgCgTXt25gLQ5LewE1 7Chejn9MGdMNy9R9EwUcKSLShEMkTjFNrkJrcJxbSbZF 1 confirmed ffff
 
 <!-- cspell:enable -->
 

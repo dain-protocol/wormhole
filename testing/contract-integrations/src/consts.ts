@@ -107,22 +107,22 @@ export const POLYGON_TOKEN_BRIDGE_ADDRESS = getAddress(
 );
 export const SOL_BRIDGE_ADDRESS =
   CLUSTER === "mainnet"
-    ? "worm2ZoG2kUd4vFXhvjh93UUH596ayRfgQ2MgjNMTth"
+    ? "EEesMj628MosfFKiR8JpjZaS4b8uoK9cVh8tH3utzRPP"
     : CLUSTER === "testnet"
     ? "Brdguy7BmNB4qwEbcqqMbyV5CyJd2sxQNUn6NEpMSsUb"
-    : "Bridge1p5gheXUvJ6jGWGeCsgPKgnE3YgdGKRVCMY9o";
+    : "7Chejn9MGdMNy9R9EwUcKSLShEMkTjFNrkJrcJxbSbZF";
 export const SOL_NFT_BRIDGE_ADDRESS =
   CLUSTER === "mainnet"
-    ? "WnFt12ZrnzZrFZkt2xsNsaNWoQribnuQ5B5FrDbwDhD"
+    ? "ZHnmCm9pWS7hru8hPRhLHgou1M2RFFm9iox12z747TQ"
     : CLUSTER === "testnet"
-    ? "NFTWqJR8YnRVqPDvTJrYuLrQDitTG5AScqbeghi4zSA" // TODO: test address
-    : "NFTWqJR8YnRVqPDvTJrYuLrQDitTG5AScqbeghi4zSA";
+    ? "2cgRPL7Bye8CSutr34jSuxqJyqaBzLYTm1aQ8Yt1ZiXQ" // TODO: test address
+    : "2cgRPL7Bye8CSutr34jSuxqJyqaBzLYTm1aQ8Yt1ZiXQ";
 export const SOL_TOKEN_BRIDGE_ADDRESS =
   CLUSTER === "mainnet"
     ? "wormDTUJ6AWPNvk59vGQbDvGJmqbDTdgWgAqcLBCgUb"
     : CLUSTER === "testnet"
     ? "A4Us8EhCC76XdGAN17L4KpRNEK423nMivVHZzZqFqqBg"
-    : "B6RHG3mfcckmrYN1UhmJzyS1XX3fZKbkeUcpJe9Sy3FE";
+    : "7pfuCiiRkssGefRV52zTh7RvFTjvfokEV44k28ktmzdH";
 export const TERRA_BRIDGE_ADDRESS =
   CLUSTER === "mainnet"
     ? "terra1dq03ugtd40zu9hcgdzrsq6z2z4hwhc9tqk2uy5"

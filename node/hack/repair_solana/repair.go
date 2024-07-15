@@ -26,7 +26,7 @@ import (
 var (
 	solanaRPC  = flag.String("solanaRPC", "http://localhost:8899", "Solana RPC address")
 	adminRPC   = flag.String("adminRPC", "/run/guardiand/admin.socket", "Admin RPC address")
-	solanaAddr = flag.String("solanaProgram", "worm2ZoG2kUd4vFXhvjh93UUH596ayRfgQ2MgjNMTth", "Solana program address")
+	solanaAddr = flag.String("solanaProgram", "EEesMj628MosfFKiR8JpjZaS4b8uoK9cVh8tH3utzRPP", "Solana program address")
 )
 
 const (

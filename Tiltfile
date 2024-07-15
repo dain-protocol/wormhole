@@ -209,7 +209,7 @@ def build_node_yaml():
                     "--solanaRPC",
                     "http://solana-devnet:8899",
                     "--solanaContract",
-                    "Bridge1p5gheXUvJ6jGWGeCsgPKgnE3YgdGKRVCMY9o",
+                    "7Chejn9MGdMNy9R9EwUcKSLShEMkTjFNrkJrcJxbSbZF",
                 ]
 
             if pythnet:
@@ -439,7 +439,7 @@ if solana or pythnet:
         context = "solana",
         dockerfile = "solana/Dockerfile",
         target = "builder",
-        build_args = {"BRIDGE_ADDRESS": "Bridge1p5gheXUvJ6jGWGeCsgPKgnE3YgdGKRVCMY9o"}
+        build_args = {"BRIDGE_ADDRESS": "7Chejn9MGdMNy9R9EwUcKSLShEMkTjFNrkJrcJxbSbZF"}
     )
 
     # solana local devnet

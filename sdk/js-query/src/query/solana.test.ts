@@ -46,7 +46,7 @@ const ACCOUNTS = [
 const PDAS: SolanaPdaEntry[] = [
   {
     programAddress: Uint8Array.from(
-      base58.decode("Bridge1p5gheXUvJ6jGWGeCsgPKgnE3YgdGKRVCMY9o")
+      base58.decode("7Chejn9MGdMNy9R9EwUcKSLShEMkTjFNrkJrcJxbSbZF")
     ), // Core Bridge address
     seeds: [
       new Uint8Array(Buffer.from("GuardianSet")),

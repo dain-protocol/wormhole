@@ -39,13 +39,13 @@ spec:
           command:
             - /root/.local/share/solana/install/active_release/bin/solana-test-validator
             - --bpf-program
-            - Bridge1p5gheXUvJ6jGWGeCsgPKgnE3YgdGKRVCMY9o
+            - 7Chejn9MGdMNy9R9EwUcKSLShEMkTjFNrkJrcJxbSbZF
             - /opt/solana/deps/bridge.so
             - --bpf-program
-            - B6RHG3mfcckmrYN1UhmJzyS1XX3fZKbkeUcpJe9Sy3FE
+            - 7pfuCiiRkssGefRV52zTh7RvFTjvfokEV44k28ktmzdH
             - /opt/solana/deps/token_bridge.so
             - --bpf-program
-            - NFTWqJR8YnRVqPDvTJrYuLrQDitTG5AScqbeghi4zSA
+            - 2cgRPL7Bye8CSutr34jSuxqJyqaBzLYTm1aQ8Yt1ZiXQ
             - /opt/solana/deps/nft_bridge.so
             - --bpf-program
             - CP1co2QMMoDPbsmV7PGcUTLFwyhgCgTXt25gLQ5LewE1

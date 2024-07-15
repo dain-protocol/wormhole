@@ -315,7 +315,7 @@ func TestParseConfigSuccess(t *testing.T) {
           "solPDA": {
             "note:": "Core Bridge on Devnet",
             "chain": 1,
-            "programAddress": "Bridge1p5gheXUvJ6jGWGeCsgPKgnE3YgdGKRVCMY9o"
+            "programAddress": "7Chejn9MGdMNy9R9EwUcKSLShEMkTjFNrkJrcJxbSbZF"
           }
         }
       ]
@@ -344,7 +344,7 @@ func TestParseConfigSuccess(t *testing.T) {
 	_, exists = perm.allowedCalls["solAccount:1:BVxyYhm498L79r4HMQ9sxZ5bi41DmJmeWZ7SCS7Cyvna"]
 	assert.True(t, exists)
 
-	_, exists = perm.allowedCalls["solPDA:1:Bridge1p5gheXUvJ6jGWGeCsgPKgnE3YgdGKRVCMY9o"]
+	_, exists = perm.allowedCalls["solPDA:1:7Chejn9MGdMNy9R9EwUcKSLShEMkTjFNrkJrcJxbSbZF"]
 	assert.True(t, exists)
 }
 

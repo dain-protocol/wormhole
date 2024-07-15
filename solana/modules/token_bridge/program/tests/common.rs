@@ -121,11 +121,11 @@ mod helpers {
     pub async fn setup() -> (BanksClient, Keypair, Pubkey, Pubkey) {
         let (program, token_program) = (
             env::var("BRIDGE_PROGRAM")
-                .unwrap_or_else(|_| "Bridge1p5gheXUvJ6jGWGeCsgPKgnE3YgdGKRVCMY9o".to_string())
+                .unwrap_or_else(|_| "7Chejn9MGdMNy9R9EwUcKSLShEMkTjFNrkJrcJxbSbZF".to_string())
                 .parse::<Pubkey>()
                 .unwrap(),
             env::var("TOKEN_BRIDGE_PROGRAM")
-                .unwrap_or_else(|_| "B6RHG3mfcckmrYN1UhmJzyS1XX3fZKbkeUcpJe9Sy3FE".to_string())
+                .unwrap_or_else(|_| "7pfuCiiRkssGefRV52zTh7RvFTjvfokEV44k28ktmzdH".to_string())
                 .parse::<Pubkey>()
                 .unwrap(),
         );

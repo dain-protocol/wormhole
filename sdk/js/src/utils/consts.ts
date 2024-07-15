@@ -148,9 +148,9 @@ const MAINNET = {
     nft_bridge: undefined,
   },
   solana: {
-    core: "worm2ZoG2kUd4vFXhvjh93UUH596ayRfgQ2MgjNMTth",
-    token_bridge: "wormDTUJ6AWPNvk59vGQbDvGJmqbDTdgWgAqcLBCgUb",
-    nft_bridge: "WnFt12ZrnzZrFZkt2xsNsaNWoQribnuQ5B5FrDbwDhD",
+    core: "EEesMj628MosfFKiR8JpjZaS4b8uoK9cVh8tH3utzRPP",
+    token_bridge: "2KVLdA9gdCTbBhtGjj7tgzo3jU5pfaxuTkgoULLrjqTG",
+    nft_bridge: "ZHnmCm9pWS7hru8hPRhLHgou1M2RFFm9iox12z747TQ",
   },
   ethereum: {
     core: "0x98f3c9e6E3fAce36bAAd05FE09d375Ef1464288B",
@@ -724,9 +724,9 @@ const DEVNET = {
     nft_bridge: undefined,
   },
   solana: {
-    core: "Bridge1p5gheXUvJ6jGWGeCsgPKgnE3YgdGKRVCMY9o",
-    token_bridge: "B6RHG3mfcckmrYN1UhmJzyS1XX3fZKbkeUcpJe9Sy3FE",
-    nft_bridge: "NFTWqJR8YnRVqPDvTJrYuLrQDitTG5AScqbeghi4zSA",
+    core: "7Chejn9MGdMNy9R9EwUcKSLShEMkTjFNrkJrcJxbSbZF",
+    token_bridge: "7pfuCiiRkssGefRV52zTh7RvFTjvfokEV44k28ktmzdH",
+    nft_bridge: "2cgRPL7Bye8CSutr34jSuxqJyqaBzLYTm1aQ8Yt1ZiXQ",
   },
   terra: {
     core: "terra14hj2tavq8fpesdwxxcu44rty3hh90vhujrvcmstl4zr3txmfvw9ssrc8au",
