@@ -19,7 +19,7 @@ syntax = "proto3";
 package prometheus.v1;
 
 //option go_package = "prompb";
-option go_package = "github.com/certusone/wormhole/node/pkg/proto/prometheus/v1;prometheusv1";
+option go_package = "github.com/dain-protocol/wormhole/node/pkg/proto/prometheus/v1;prometheusv1";
 
 //import "gogoproto/gogo.proto";
 

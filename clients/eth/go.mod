@@ -3,16 +3,16 @@ module github.com/certusone/wormhole/clients/eth
 go 1.20
 
 require (
-	github.com/certusone/wormhole/node v0.0.0-20210722131135-a191017d22d0
+	github.com/dain-protocol/wormhole/node v0.0.0-20210722131135-a191017d22d0
 	github.com/ethereum/go-ethereum v1.12.0
 	github.com/spf13/cobra v1.7.0
 	github.com/wormhole-foundation/wormhole/sdk v0.0.0-20220926172624-4b38dc650bb0
 )
 
-replace github.com/certusone/wormhole/node => ../../node
+replace github.com/dain-protocol/wormhole/node => ../../node
 
 // See https://github.com/cosmos/cosmos-sdk/issues/10925 for more details.
-// Won't be needed anymore as soon as github.com/certusone/wormhole/node upgrades to v0.47
+// Won't be needed anymore as soon as github.com/dain-protocol/wormhole/node upgrades to v0.47
 replace github.com/gogo/protobuf => github.com/regen-network/protobuf v1.3.3-alpha.regen.1
 
 replace github.com/wormhole-foundation/wormhole/sdk => ../../sdk

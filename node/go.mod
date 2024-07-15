@@ -1,4 +1,4 @@
-module github.com/certusone/wormhole/node
+module github.com/dain-protocol/wormhole/node
 
 go 1.21.9
 
