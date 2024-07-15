@@ -34,7 +34,8 @@ node: $(BIN)/guardiand
 .PHONY: $(BIN)/guardiand
 $(BIN)/guardiand: CGO_ENABLED=1
 $(BIN)/guardiand: dirs generate
-	@# The go-ethereum and celo-blockchain packages both implement secp256k1 using the exact same header, but that causes duplicate symbols.
+	@# Ensure dependencies are downloaded
+	cd node && go get github.com/dain-protocol/wormhole/node
 	cd node && go build -ldflags "-X github.com/dain-protocol/wormhole/node/pkg/version.version=${VERSION} -extldflags -Wl,--allow-multiple-definition" \
 	  -o ../$(BIN)/guardiand \
 	  github.com/dain-protocol/wormhole/node
