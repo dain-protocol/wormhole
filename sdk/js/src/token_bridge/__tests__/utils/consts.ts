@@ -28,7 +28,7 @@ export const ETH_PRIVATE_KEY11 =
 export const ETH_PRIVATE_KEY12 =
   "0x9b9c613a36396172eab2d34d72331c8ca83a358781883a535d2941f66db07b24"; // account 12 - ntt-accountant tests
 export const SOLANA_HOST = ci
-  ? "http://solana-devnet:8899"
+  ? "https://api.testnet.solana.com"
   : "http://localhost:8899";
 export const SOLANA_PRIVATE_KEY = new Uint8Array([
   14, 173, 153, 4, 176, 224, 201, 111, 32, 237, 183, 185, 159, 247, 22, 161, 89,

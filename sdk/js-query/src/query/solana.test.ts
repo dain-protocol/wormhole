@@ -32,7 +32,7 @@ const SERVER_URL = CI ? "http://query-server:" : "http://localhost:";
 const CCQ_SERVER_URL = SERVER_URL + "6069/v1";
 const QUERY_URL = CCQ_SERVER_URL + "/query";
 const SOLANA_NODE_URL = CI
-  ? "http://solana-devnet:8899"
+  ? "https://api.testnet.solana.com"
   : "http://localhost:8899";
 
 const PRIVATE_KEY =

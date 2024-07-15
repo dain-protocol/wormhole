@@ -207,7 +207,7 @@ def build_node_yaml():
             if solana_watcher:
                 container["command"] += [
                     "--solanaRPC",
-                    "http://solana-devnet:8899",
+                    "https://api.testnet.solana.com",
                     "--solanaContract",
                     "7Chejn9MGdMNy9R9EwUcKSLShEMkTjFNrkJrcJxbSbZF",
                 ]
@@ -215,7 +215,7 @@ def build_node_yaml():
             if pythnet:
                 container["command"] += [
                     "--pythnetRPC",
-#                    "http://solana-devnet:8899",
+#                    "https://api.testnet.solana.com",
                      "http://pythnet.rpcpool.com",
                     "--pythnetWS",
 #                   "ws://solana-devnet:8900",

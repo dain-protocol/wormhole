@@ -122,11 +122,11 @@ spec:
             # - --solanaContract
             # - 7Chejn9MGdMNy9R9EwUcKSLShEMkTjFNrkJrcJxbSbZF
             # - --solanaRPC
-            # - http://solana-devnet:8899
+            # - https://api.testnet.solana.com
             # - --pythnetContract
             # - 7Chejn9MGdMNy9R9EwUcKSLShEMkTjFNrkJrcJxbSbZF
             # - --pythnetRPC
-            # - http://solana-devnet:8899
+            # - https://api.testnet.solana.com
             - --unsafeDevMode
             - --guardianKey
             - /tmp/bridge.key

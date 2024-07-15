@@ -8,7 +8,7 @@
   },
   "chains": {
     "1": {
-      "rpcUrlTilt": "http://solana-devnet:8899",
+      "rpcUrlTilt": "https://api.testnet.solana.com",
       "rpcUrlLocal": "http://localhost:8899",
       "rpcPort": "8899",
       "contracts": {

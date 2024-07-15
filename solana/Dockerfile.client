@@ -26,7 +26,7 @@ COPY proto /usr/src/proto
 WORKDIR /usr/src/solana
 
 RUN solana config set --keypair "/usr/src/solana/keys/solana-devnet.json"
-RUN solana config set --url "http://solana-devnet:8899"
+RUN solana config set --url "https://api.testnet.solana.com"
 
 ENV EMITTER_ADDRESS="11111111111111111111111111111115"
 ENV BRIDGE_ADDRESS="7Chejn9MGdMNy9R9EwUcKSLShEMkTjFNrkJrcJxbSbZF"

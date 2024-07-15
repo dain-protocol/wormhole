@@ -9,7 +9,7 @@ setDefaultWasm("node");
 jest.setTimeout(120000);
 const ci = !!process.env.CI;
 export const SOLANA_HOST = ci
-  ? "http://solana-devnet:8899"
+  ? "https://api.testnet.solana.com"
   : "http://localhost:8899";
 const SOLANA_PRIVATE_KEY = new Uint8Array([
   14, 173, 153, 4, 176, 224, 201, 111, 32, 237, 183, 185, 159, 247, 22, 161, 89,
