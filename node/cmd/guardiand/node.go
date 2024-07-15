@@ -623,21 +623,9 @@ func runNode(cmd *cobra.Command, args []string) {
 		logger.Fatal("Please specify --dataDir")
 	}
 
-	if *solanaRPC == "" {
-		logger.Fatal("Please specify --solanaRPC")
-	}
-
-	if *solanaContract == "" {
-		logger.Fatal("Please specify --solanaContract")
-	}
-
 	// Ethereum is required since we use it to get the guardian set. All other chains are optional.
-	// if *ethRPC == "" {
-	// 	logger.Fatal("Please specify --ethRPC")
-	// }
-
-	if !argsConsistent([]string{*solanaContract, *solanaRPC}) {
-		logger.Fatal("Both --solanaContract and --solanaRPC must be set")
+	if *ethRPC == "" {
+		logger.Fatal("Please specify --ethRPC")
 	}
 
 	// Validate the args for all the EVM chains. The last flag indicates if the chain is allowed in mainnet.
