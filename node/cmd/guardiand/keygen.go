@@ -32,13 +32,17 @@ func runKeygen(cmd *cobra.Command, args []string) {
 
 	log.Print("Creating new key at ", args[0])
 
+	log.Print("Starting key generation...")
 	gk, err := ecdsa.GenerateKey(ethcrypto.S256(), rand.Reader)
 	if err != nil {
 		log.Fatalf("failed to generate key: %v", err)
 	}
+	log.Print("Key generation completed.")
 
+	log.Print("Writing key to file...")
 	err = common.WriteArmoredKey(gk, *keyDescription, args[0], *blockType, false)
 	if err != nil {
 		log.Fatalf("failed to write key: %v", err)
 	}
+	log.Print("Key successfully written to file.")
 }
