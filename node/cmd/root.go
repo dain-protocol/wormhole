@@ -4,17 +4,17 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/certusone/wormhole/node/cmd/ccq"
-	"github.com/certusone/wormhole/node/cmd/debug"
-	"github.com/certusone/wormhole/node/cmd/spy"
-	"github.com/certusone/wormhole/node/pkg/version"
+	"github.com/dain-protocol/wormhole/node/cmd/ccq"
+	"github.com/dain-protocol/wormhole/node/cmd/debug"
+	"github.com/dain-protocol/wormhole/node/cmd/spy"
+	"github.com/dain-protocol/wormhole/node/pkg/version"
 
 	"github.com/spf13/cobra"
 
 	homedir "github.com/mitchellh/go-homedir"
 	"github.com/spf13/viper"
 
-	"github.com/certusone/wormhole/node/cmd/guardiand"
+	"github.com/dain-protocol/wormhole/node/cmd/guardiand"
 )
 
 var cfgFile string

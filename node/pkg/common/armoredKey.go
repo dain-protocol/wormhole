@@ -11,7 +11,7 @@ import (
 	"golang.org/x/crypto/openpgp/armor" //nolint
 	"google.golang.org/protobuf/proto"
 
-	nodev1 "github.com/certusone/wormhole/node/pkg/proto/node/v1"
+	nodev1 "github.com/dain-protocol/wormhole/node/pkg/proto/node/v1"
 )
 
 const (

@@ -10,8 +10,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/certusone/wormhole/node/pkg/common"
-	"github.com/certusone/wormhole/node/pkg/version"
+	"github.com/dain-protocol/wormhole/node/pkg/common"
+	"github.com/dain-protocol/wormhole/node/pkg/version"
 	eth_common "github.com/ethereum/go-ethereum/common"
 	ethcrypto "github.com/ethereum/go-ethereum/crypto"
 	"github.com/prometheus/client_golang/prometheus"
@@ -36,8 +36,8 @@ import (
 	"go.uber.org/zap/zapcore"
 	"google.golang.org/protobuf/proto"
 
-	gossipv1 "github.com/certusone/wormhole/node/pkg/proto/gossip/v1"
-	"github.com/certusone/wormhole/node/pkg/supervisor"
+	gossipv1 "github.com/dain-protocol/wormhole/node/pkg/proto/gossip/v1"
+	"github.com/dain-protocol/wormhole/node/pkg/supervisor"
 )
 
 const DefaultPort = 8999

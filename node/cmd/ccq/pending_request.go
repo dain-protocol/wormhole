@@ -4,8 +4,8 @@ import (
 	"encoding/hex"
 	"sync"
 
-	gossipv1 "github.com/certusone/wormhole/node/pkg/proto/gossip/v1"
-	"github.com/certusone/wormhole/node/pkg/query"
+	gossipv1 "github.com/dain-protocol/wormhole/node/pkg/proto/gossip/v1"
+	"github.com/dain-protocol/wormhole/node/pkg/query"
 	"github.com/wormhole-foundation/wormhole/sdk/vaa"
 	"go.uber.org/zap"
 )

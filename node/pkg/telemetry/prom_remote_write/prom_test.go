@@ -4,7 +4,7 @@ import (
 	"bytes"
 	"testing"
 
-	prometheusv1 "github.com/certusone/wormhole/node/pkg/proto/prometheus/v1"
+	prometheusv1 "github.com/dain-protocol/wormhole/node/pkg/proto/prometheus/v1"
 	"google.golang.org/protobuf/proto"
 
 	"github.com/stretchr/testify/require"

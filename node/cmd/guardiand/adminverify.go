@@ -11,8 +11,8 @@ import (
 	"github.com/status-im/keycard-go/hexutils"
 	"google.golang.org/protobuf/encoding/prototext"
 
-	"github.com/certusone/wormhole/node/pkg/adminrpc"
-	nodev1 "github.com/certusone/wormhole/node/pkg/proto/node/v1"
+	"github.com/dain-protocol/wormhole/node/pkg/adminrpc"
+	nodev1 "github.com/dain-protocol/wormhole/node/pkg/proto/node/v1"
 )
 
 var AdminClientGovernanceVAAVerifyCmd = &cobra.Command{

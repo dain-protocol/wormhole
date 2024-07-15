@@ -7,8 +7,8 @@ import (
 	"fmt"
 	"time"
 
-	node_common "github.com/certusone/wormhole/node/pkg/common"
-	"github.com/certusone/wormhole/node/pkg/db"
+	node_common "github.com/dain-protocol/wormhole/node/pkg/common"
+	"github.com/dain-protocol/wormhole/node/pkg/db"
 	"github.com/mr-tron/base58"
 	"github.com/prometheus/client_golang/prometheus"
 	"github.com/prometheus/client_golang/prometheus/promauto"
@@ -18,7 +18,7 @@ import (
 	"go.uber.org/zap"
 	"go.uber.org/zap/zapcore"
 
-	gossipv1 "github.com/certusone/wormhole/node/pkg/proto/gossip/v1"
+	gossipv1 "github.com/dain-protocol/wormhole/node/pkg/proto/gossip/v1"
 	"github.com/wormhole-foundation/wormhole/sdk/vaa"
 )
 

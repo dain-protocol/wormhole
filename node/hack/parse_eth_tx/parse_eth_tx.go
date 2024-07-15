@@ -10,8 +10,8 @@ import (
 	"flag"
 	"log"
 
-	"github.com/certusone/wormhole/node/pkg/watchers/evm"
-	"github.com/certusone/wormhole/node/pkg/watchers/evm/connectors"
+	"github.com/dain-protocol/wormhole/node/pkg/watchers/evm"
+	"github.com/dain-protocol/wormhole/node/pkg/watchers/evm/connectors"
 	"go.uber.org/zap"
 
 	ethCommon "github.com/ethereum/go-ethereum/common"

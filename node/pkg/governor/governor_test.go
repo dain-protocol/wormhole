@@ -16,8 +16,8 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/certusone/wormhole/node/pkg/common"
-	"github.com/certusone/wormhole/node/pkg/db"
+	"github.com/dain-protocol/wormhole/node/pkg/common"
+	"github.com/dain-protocol/wormhole/node/pkg/db"
 	"github.com/wormhole-foundation/wormhole/sdk/vaa"
 	"go.uber.org/zap"
 	"go.uber.org/zap/zapcore"
@@ -830,7 +830,7 @@ func TestFlowCancelProcessMsgForTimeFullCancel(t *testing.T) {
 	recipientSui := "0x84a5f374d29fc77e370014dce4fd6a55b58ad608de8074b0be5571701724da31"
 
 	// Data for Solana. Only used to represent the flow cancel asset.
-	// "2KVLdA9gdCTbBhtGjj7tgzo3jU5pfaxuTkgoULLrjqTG"
+	// "wormDTUJ6AWPNvk59vGQbDvGJmqbDTdgWgAqcLBCgUb"
 	tokenBridgeAddrStrSolana := "0x0e0a589e6488147a94dcfa592b90fdd41152bb2ca77bf6016758a6f4df9d21b4" //nolint:gosec
 
 	// Add chain entries to `gov`
@@ -2376,7 +2376,7 @@ func TestReloadTransfersNearCapacity(t *testing.T) {
 	require.NoError(t, err)
 
 	// Data for Solana. Only used to represent the flow cancel asset.
-	// "2KVLdA9gdCTbBhtGjj7tgzo3jU5pfaxuTkgoULLrjqTG"
+	// "wormDTUJ6AWPNvk59vGQbDvGJmqbDTdgWgAqcLBCgUb"
 	tokenBridgeAddrStrSolana := "0x0e0a589e6488147a94dcfa592b90fdd41152bb2ca77bf6016758a6f4df9d21b4" //nolint:gosec
 
 	// Add chain entries to `gov`

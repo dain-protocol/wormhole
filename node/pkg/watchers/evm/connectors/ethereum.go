@@ -4,7 +4,7 @@ import (
 	"context"
 	"time"
 
-	ethAbi "github.com/certusone/wormhole/node/pkg/watchers/evm/connectors/ethabi"
+	ethAbi "github.com/dain-protocol/wormhole/node/pkg/watchers/evm/connectors/ethabi"
 
 	ethRpc "github.com/ethereum/go-ethereum/rpc"
 

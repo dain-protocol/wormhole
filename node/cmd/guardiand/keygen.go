@@ -5,7 +5,7 @@ import (
 	"crypto/rand"
 	"log"
 
-	"github.com/certusone/wormhole/node/pkg/common"
+	"github.com/dain-protocol/wormhole/node/pkg/common"
 
 	ethcrypto "github.com/ethereum/go-ethereum/crypto"
 	"github.com/spf13/cobra"

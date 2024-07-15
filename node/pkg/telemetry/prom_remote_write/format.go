@@ -25,7 +25,7 @@ import (
 	"sort"
 	"time"
 
-	prometheusv1 "github.com/certusone/wormhole/node/pkg/proto/prometheus/v1"
+	prometheusv1 "github.com/dain-protocol/wormhole/node/pkg/proto/prometheus/v1"
 
 	dto "github.com/prometheus/client_model/go"
 	"github.com/prometheus/common/expfmt"

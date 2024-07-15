@@ -1,7 +1,7 @@
-SHELL = /usr/bin/env bash
+SHELL = /bin/bash
 MAKEFLAGS += --no-builtin-rules
 
-PREFIX ?= /usr/local
+PREFIX ?= $(HOME)/.local
 OUT = build
 BIN = $(OUT)/bin
 
@@ -10,21 +10,23 @@ BIN = $(OUT)/bin
 # Hardcode the version string
 VERSION = v1.0.0
 
+.PHONY: all
+all: node
+
 .PHONY: dirs
-dirs: Makefile
-	@mkdir -p $(BIN)
+dirs:
+	mkdir -p $(BIN)
 
 .PHONY: install
 ## Install guardiand binary
-install:
-	install -m 775 $(BIN)/* $(PREFIX)/bin
-	setcap cap_ipc_lock=+ep $(PREFIX)/bin/guardiand
+install: $(BIN)/guardiand
+	install -d $(PREFIX)/bin
+	install -m 755 $(BIN)/guardiand $(PREFIX)/bin
 
 .PHONY: generate
 generate: dirs
 	cd tools && ./build.sh
-	rm -rf bridge
-	rm -rf node/pkg/proto
+	rm -rf bridge node/pkg/proto
 	tools/bin/buf generate
 
 .PHONY: node
@@ -34,9 +36,8 @@ node: $(BIN)/guardiand
 .PHONY: $(BIN)/guardiand
 $(BIN)/guardiand: CGO_ENABLED=1
 $(BIN)/guardiand: dirs generate
-	@# Ensure dependencies are downloaded
-	cd node && go get github.com/dain-protocol/wormhole/node
-	cd node && go build -ldflags "-X github.com/dain-protocol/wormhole/node/pkg/version.version=${VERSION} -extldflags -Wl,--allow-multiple-definition" \
+	cd node && go mod tidy
+	cd node && go build -buildvcs=false -ldflags "-X github.com/dain-protocol/wormhole/node/pkg/version.version=${VERSION} -extldflags '-Wl,--allow-multiple-definition'" \
 	  -o ../$(BIN)/guardiand \
 	  github.com/dain-protocol/wormhole/node
 
@@ -44,3 +45,8 @@ $(BIN)/guardiand: dirs generate
 ## Clean build directory
 clean:
 	rm -rf $(OUT)
+
+.PHONY: help
+## Display this help screen
+help:
+	@grep -h -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | awk 'BEGIN {FS = ":.*?## "}; {printf "\033[36m%-30s\033[0m %s\n", $$1, $$2}'

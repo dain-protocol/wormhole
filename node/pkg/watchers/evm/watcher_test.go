@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"testing"
 
-	"github.com/certusone/wormhole/node/pkg/watchers/evm/connectors/ethabi"
+	"github.com/dain-protocol/wormhole/node/pkg/watchers/evm/connectors/ethabi"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 	"github.com/wormhole-foundation/wormhole/sdk/vaa"

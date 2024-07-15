@@ -6,11 +6,11 @@ import (
 	"sync"
 	"time"
 
-	"github.com/certusone/wormhole/node/pkg/common"
+	"github.com/dain-protocol/wormhole/node/pkg/common"
 	"github.com/wormhole-foundation/wormhole/sdk/vaa"
 	"go.uber.org/zap"
 
-	ethAbi "github.com/certusone/wormhole/node/pkg/watchers/evm/connectors/ethabi"
+	ethAbi "github.com/dain-protocol/wormhole/node/pkg/watchers/evm/connectors/ethabi"
 	ethBind "github.com/ethereum/go-ethereum/accounts/abi/bind"
 	ethCommon "github.com/ethereum/go-ethereum/common"
 	ethClient "github.com/ethereum/go-ethereum/ethclient"

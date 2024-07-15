@@ -6,7 +6,7 @@ import (
 	"time"
 
 	"github.com/benbjohnson/clock"
-	gossipv1 "github.com/certusone/wormhole/node/pkg/proto/gossip/v1"
+	gossipv1 "github.com/dain-protocol/wormhole/node/pkg/proto/gossip/v1"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 	"github.com/wormhole-foundation/wormhole/sdk/vaa"

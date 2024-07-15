@@ -3,7 +3,7 @@ package p2p
 import (
 	"fmt"
 
-	"github.com/certusone/wormhole/node/pkg/common"
+	"github.com/dain-protocol/wormhole/node/pkg/common"
 )
 
 // This is the definitive source for the default network parameters. Please reference these (or use the methods below), but avoid copying them!

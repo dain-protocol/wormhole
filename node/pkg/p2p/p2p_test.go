@@ -9,8 +9,8 @@ import (
 	"github.com/libp2p/go-libp2p/core/peer"
 	"github.com/stretchr/testify/assert"
 
-	node_common "github.com/certusone/wormhole/node/pkg/common"
-	gossipv1 "github.com/certusone/wormhole/node/pkg/proto/gossip/v1"
+	node_common "github.com/dain-protocol/wormhole/node/pkg/common"
+	gossipv1 "github.com/dain-protocol/wormhole/node/pkg/proto/gossip/v1"
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/crypto"
 )

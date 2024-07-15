@@ -6,7 +6,7 @@ import (
 	"fmt"
 	"log"
 
-	nodev1 "github.com/certusone/wormhole/node/pkg/proto/node/v1"
+	nodev1 "github.com/dain-protocol/wormhole/node/pkg/proto/node/v1"
 	"github.com/wormhole-foundation/wormhole/sdk"
 	"github.com/wormhole-foundation/wormhole/sdk/vaa"
 	"google.golang.org/grpc"

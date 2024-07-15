@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/certusone/wormhole/node/pkg/common"
-	"github.com/certusone/wormhole/node/pkg/watchers/evm/connectors"
+	"github.com/dain-protocol/wormhole/node/pkg/common"
+	"github.com/dain-protocol/wormhole/node/pkg/watchers/evm/connectors"
 
 	"go.uber.org/zap"
 

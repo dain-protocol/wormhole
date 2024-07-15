@@ -3,7 +3,7 @@ package p2p
 import (
 	"sync"
 
-	gossipv1 "github.com/certusone/wormhole/node/pkg/proto/gossip/v1"
+	gossipv1 "github.com/dain-protocol/wormhole/node/pkg/proto/gossip/v1"
 	"github.com/wormhole-foundation/wormhole/sdk/vaa"
 )
 

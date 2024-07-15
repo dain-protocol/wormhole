@@ -10,8 +10,8 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/certusone/wormhole/node/pkg/common"
-	"github.com/certusone/wormhole/node/pkg/query"
+	"github.com/dain-protocol/wormhole/node/pkg/common"
+	"github.com/dain-protocol/wormhole/node/pkg/query"
 	"github.com/wormhole-foundation/wormhole/sdk/vaa"
 	"go.uber.org/zap"
 

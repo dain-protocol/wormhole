@@ -11,8 +11,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/certusone/wormhole/node/pkg/common"
-	"github.com/certusone/wormhole/node/pkg/watchers/near/nearapi"
+	"github.com/dain-protocol/wormhole/node/pkg/common"
+	"github.com/dain-protocol/wormhole/node/pkg/watchers/near/nearapi"
 	eth_common "github.com/ethereum/go-ethereum/common"
 	"github.com/mr-tron/base58"
 	"github.com/tidwall/gjson"

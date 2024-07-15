@@ -6,7 +6,7 @@ import (
 	"os"
 	"strconv"
 
-	abi "github.com/certusone/wormhole/node/pkg/watchers/evm/connectors/ethabi"
+	abi "github.com/dain-protocol/wormhole/node/pkg/watchers/evm/connectors/ethabi"
 	"github.com/ethereum/go-ethereum/accounts/abi/bind"
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/core/types"

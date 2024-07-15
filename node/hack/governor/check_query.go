@@ -4,7 +4,7 @@
 package main
 
 import (
-	"github.com/certusone/wormhole/node/pkg/governor"
+	"github.com/dain-protocol/wormhole/node/pkg/governor"
 
 	"go.uber.org/zap"
 )

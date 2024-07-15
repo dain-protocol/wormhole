@@ -21,9 +21,9 @@ import (
 	"github.com/spf13/pflag"
 	"golang.org/x/crypto/sha3"
 
-	"github.com/certusone/wormhole/node/pkg/common"
-	gossipv1 "github.com/certusone/wormhole/node/pkg/proto/gossip/v1"
-	publicrpcv1 "github.com/certusone/wormhole/node/pkg/proto/publicrpc/v1"
+	"github.com/dain-protocol/wormhole/node/pkg/common"
+	gossipv1 "github.com/dain-protocol/wormhole/node/pkg/proto/gossip/v1"
+	publicrpcv1 "github.com/dain-protocol/wormhole/node/pkg/proto/publicrpc/v1"
 	"github.com/wormhole-foundation/wormhole/sdk"
 	"github.com/wormhole-foundation/wormhole/sdk/vaa"
 
@@ -34,7 +34,7 @@ import (
 	"google.golang.org/grpc/credentials/insecure"
 	"google.golang.org/protobuf/encoding/prototext"
 
-	nodev1 "github.com/certusone/wormhole/node/pkg/proto/node/v1"
+	nodev1 "github.com/dain-protocol/wormhole/node/pkg/proto/node/v1"
 )
 
 var (

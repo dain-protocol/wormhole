@@ -7,8 +7,8 @@ import (
 	"math"
 	"strings"
 
-	"github.com/certusone/wormhole/node/pkg/common"
-	gossipv1 "github.com/certusone/wormhole/node/pkg/proto/gossip/v1"
+	"github.com/dain-protocol/wormhole/node/pkg/common"
+	gossipv1 "github.com/dain-protocol/wormhole/node/pkg/proto/gossip/v1"
 	"github.com/wormhole-foundation/wormhole/sdk/vaa"
 
 	ethCommon "github.com/ethereum/go-ethereum/common"
