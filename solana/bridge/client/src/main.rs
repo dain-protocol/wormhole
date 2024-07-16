@@ -36,6 +36,7 @@ use solana_clap_utils::{
         is_url,
     },
 };
+
 use solana_client::{
     rpc_client::RpcClient,
     rpc_config::RpcSendTransactionConfig,
@@ -84,10 +85,14 @@ fn command_deploy_bridge(
     message_fee: u64,
 ) -> CommmandResult {
     println!("Initializing Wormhole bridge {}", bridge);
+    println!("Number of initial guardians: {}", initial_guardians.len());
+    println!("Guardian expiration: {}", guardian_expiration);
+    println!("Message fee: {}", message_fee);
 
     let minimum_balance_for_rent_exemption = config
         .rpc_client
         .get_minimum_balance_for_rent_exemption(size_of::<BridgeData>())?;
+    println!("Minimum balance for rent exemption: {}", minimum_balance_for_rent_exemption);
 
     let ix = bridge::instructions::initialize(
         *bridge,
@@ -97,18 +102,37 @@ fn command_deploy_bridge(
         initial_guardians.as_slice(),
     )
     .unwrap();
-    println!("config account: {}, ", ix.accounts[0].pubkey);
+    println!("Instruction created successfully");
+    println!("Program ID: {}", ix.program_id);
+    println!("Config account: {}", ix.accounts[0].pubkey);
+    for (i, account) in ix.accounts.iter().enumerate() {
+        println!("Account {}: pubkey={}, is_signer={}, is_writable={}", 
+                 i, account.pubkey, account.is_signer, account.is_writable);
+    }
+    
+    println!("Instruction created successfully");
+    println!("Config account: {}", ix.accounts[0].pubkey);
+    
     let mut transaction = Transaction::new_with_payer(&[ix], Some(&config.fee_payer.pubkey()));
+    println!("Transaction created with payer: {}", config.fee_payer.pubkey());
 
     let (recent_blockhash, fee_calculator) = config.rpc_client.get_recent_blockhash()?;
+    println!("Recent blockhash: {}", recent_blockhash);
+    
+    let fee = fee_calculator.calculate_fee(transaction.message());
+    println!("Calculated fee: {}", fee);
+    
     check_fee_payer_balance(
         config,
-        minimum_balance_for_rent_exemption + fee_calculator.calculate_fee(transaction.message()),
+        minimum_balance_for_rent_exemption + fee,
     )?;
+    println!("Fee payer balance checked successfully");
+
     transaction.sign(&[&config.fee_payer, &config.owner], recent_blockhash);
+    println!("Transaction signed successfully");
+
     Ok(Some(transaction))
 }
-
 // [`get_recent_blockhash`] is deprecated, but devnet deployment hangs using the
 // recommended method, so allowing deprecated here. This is only the client, so
 // no risk.
@@ -416,25 +440,36 @@ fn main() {
     }
     .and_then(|transaction| {
         if let Some(transaction) = transaction {
-            let signature = config
-                .rpc_client
-                .send_and_confirm_transaction_with_spinner_and_config(
-                    &transaction,
-                    config.commitment_config,
-                    RpcSendTransactionConfig {
-                        skip_preflight: true,
-                        preflight_commitment: None,
-                        encoding: None,
-                        max_retries: None,
-                        min_context_slot: None,
-                    },
-                )?;
-            println!("Signature: {}", signature);
+            println!("Sending transaction...");
+            match config.rpc_client.send_and_confirm_transaction_with_spinner_and_config(
+                &transaction,
+                config.commitment_config,
+                RpcSendTransactionConfig {
+                    skip_preflight: false,
+                    preflight_commitment: Some(config.commitment_config.commitment),
+                    encoding: None,
+                    max_retries: Some(5),
+                    min_context_slot: None,
+                },
+            ) {
+                Ok(signature) => {
+                    println!("Transaction succeeded. Signature: {}", signature);
+                    // We'll skip fetching transaction details to avoid version-specific issues
+                },
+                Err(e) => {
+                    println!("Transaction failed. Error: {:?}", e);
+                    if let Some(tx_error) = e.get_transaction_error() {
+                        println!("Transaction error: {:?}", tx_error);
+                    }
+                }
+            }
+        } else {
+            println!("No transaction to send.");
         }
         Ok(())
     })
     .map_err(|err| {
-        eprintln!("{}", err);
+        eprintln!("Error: {}", err);
         exit(1);
     });
 }
